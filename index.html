@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mapping Themes Across Decades of CUNY Scholarship | Topic Network</title>
-  <meta name="description" content="Explore five themes identified through topic modeling of 196 CUNY dissertation abstracts.">
+  <meta name="description" content="Explore themes among Spanish-language CUNY dissertations using 196 English-language abstracts.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -15,15 +15,15 @@
     <header class="standalone-header">
       <p class="eyebrow">Text analysis / topic modeling</p>
       <h1>Mapping Themes Across Decades of CUNY Scholarship</h1>
-      <p class="standalone-lede">An interactive network of themes found in 196 English-language dissertation abstracts from a CUNY collection.</p>
+      <p class="standalone-lede">I wanted to explore common themes among dissertations cataloged as Spanish-language. This interactive network draws on 196 of their English-language abstracts.</p>
       <nav class="header-links" aria-label="Project links">
         <a href="https://github.com/Boryanata/topic-network-interactive">View source code ↗</a>
       </nav>
     </header>
-    <p class="instruction" id="network-instruction">Explore five themes identified across 196 dissertation abstracts. Select a topic to see the words and dissertations that characterize it.</p>
+    <p class="instruction" id="network-instruction">Explore five themes in English abstracts of 196 Spanish-language dissertations. Select a topic to see its prominent terms and representative titles.</p>
     <div class="explorer-layout">
       <section class="network-area" aria-label="Interactive topic network">
-        <svg id="topic-network" role="group" aria-label="Five dissertation themes linked to their characteristic words" aria-describedby="network-instruction network-legend"></svg>
+        <svg id="topic-network" role="group" aria-label="Five themes from Spanish-language dissertations linked to their characteristic words" aria-describedby="network-instruction network-legend"></svg>
         <p class="network-legend" id="network-legend">Larger words and thicker links show stronger topic-word weights. Wider topic cards represent more dissertations. A dotted rim marks a word shared by topics.</p>
       </section>
       <aside class="detail-panel" aria-labelledby="panel-title">
@@ -40,15 +40,15 @@
     <section class="research-context" aria-label="Research process">
       <section class="research-section" aria-labelledby="finding-focus">
         <h2 id="finding-focus">Finding a focus</h2>
-        <p>The collection spans disciplines and contains titles, abstracts, programs, years, and language information. English dominated the language distribution, while Spanish was the largest non-English category with 215 dissertations. Of the 209 Spanish-classified dissertations with abstracts, 196 abstracts were in English and 13 were in Spanish. I used the 196 English-language abstracts so the modeled text would be comparable.</p>
+        <p>The collection spans disciplines and contains titles, abstracts, programs, years, and dissertation-language information. English dominated the dissertation-language field; Spanish was the largest non-English category, with 215 dissertations. Of the 209 Spanish-language dissertations with abstracts, 196 abstracts were written in English and 13 in Spanish. I modeled the 196 English-language abstracts so the texts would be comparable.</p>
       </section>
       <section class="research-section" aria-labelledby="text-to-topics">
         <h2 id="text-to-topics">From text to topics</h2>
-        <p>I cleaned and preprocessed the abstracts in Python, removed stopwords, stemmed terms, and represented documents as bags of words. I used Latent Dirichlet Allocation to identify recurring combinations of terms, then examined prominent terms alongside the dissertations most strongly associated with each topic. I interpreted the five areas as translation and textual tradition; subjectivity, politics, and narrative; literature, history, and political change; culture, politics, and nation; and Spanish language and sociolinguistics.</p>
+        <p>I cleaned and preprocessed the 196 English-language abstracts in Python, removed stopwords, stemmed terms, and represented documents as bags of words. I used Latent Dirichlet Allocation to identify recurring combinations of terms, then examined prominent terms alongside the dissertations most strongly associated with each topic. I interpreted the five areas as translation and textual tradition; subjectivity, politics, and narrative; literature, history, and political change; culture, politics, and nation; and Spanish language and sociolinguistics.</p>
       </section>
       <section class="research-section" aria-labelledby="reading-model">
         <h2 id="reading-model">Reading the model</h2>
-        <p>The network connects each theme to its prominent terms. Shared words stay connected to every relevant theme; thicker links and larger word nodes reflect their relative weights in the model. Select a topic to see its primary dissertation count and examples, or select a word to see where themes overlap. These labels are interpretations developed from model output and abstracts, not definitive classifications. The network describes patterns in this 196-abstract subset; it does not measure trends across all nearly 19,000 records.</p>
+        <p>The network connects each theme to its prominent terms. Shared words stay connected to every relevant theme; thicker links and larger word nodes reflect their relative weights in the model. Select a topic to see its primary dissertation count and examples, or select a word to see where themes overlap. These labels are interpretations developed from model output and abstracts, not definitive classifications. The network describes patterns in these 196 English-language abstracts of Spanish-language dissertations; it does not measure trends across all nearly 19,000 records.</p>
       </section>
     </section>
     <p class="sr-only" id="selection-status" role="status" aria-live="polite"></p>
