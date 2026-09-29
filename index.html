@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapping Themes Across Decades of CUNY Scholarship | Topic Network</title>
+  <meta name="description" content="Explore five themes identified through topic modeling of 196 CUNY dissertation abstracts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <main class="network-page">
+    <header class="standalone-header">
+      <p class="eyebrow">Text analysis / topic modeling</p>
+      <h1>Mapping Themes Across Decades of CUNY Scholarship</h1>
+      <p class="standalone-lede">An interactive network of themes found in 196 English-language dissertation abstracts from a CUNY collection.</p>
+      <nav class="header-links" aria-label="Project links">
+        <a href="https://boryanaivanova.com/projects/mapping-cuny-dissertations.html">Read the project case study ↗</a>
+        <a href="https://github.com/Boryanata/topic-network-interactive">View source code ↗</a>
+      </nav>
+    </header>
+    <p class="instruction" id="network-instruction">Explore five themes identified across 196 dissertation abstracts. Select a topic to see the words and dissertations that characterize it.</p>
+    <div class="explorer-layout">
+      <section class="network-area" aria-label="Interactive topic network">
+        <svg id="topic-network" role="group" aria-label="Five dissertation themes linked to their characteristic words" aria-describedby="network-instruction network-legend"></svg>
+        <p class="network-legend" id="network-legend">Larger words and thicker links show stronger topic-word weights. Wider topic cards represent more dissertations. A dotted rim marks a word shared by topics.</p>
+      </section>
+      <aside class="detail-panel" aria-labelledby="panel-title">
+        <div class="panel-top">
+          <p class="panel-kicker" id="panel-kicker">Explore the network</p>
+          <button type="button" id="reset-selection">View all topics</button>
+        </div>
+        <div id="panel-content">
+          <h2 id="panel-title">Five connected themes</h2>
+          <p>Select a topic for its prevalence, strongest displayed terms, and representative dissertations. Select a word to see the themes it connects.</p>
+        </div>
+      </aside>
+    </div>
+    <p class="sr-only" id="selection-status" role="status" aria-live="polite"></p>
+  </main>
+  <script src="d3.v7.9.0.min.js"></script>
+  <script src="topic-data.js"></script>
+  <script src="network.js"></script>
+</body>
+</html>
