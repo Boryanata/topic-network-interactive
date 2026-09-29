@@ -16,13 +16,13 @@ body { background: var(--paper); color: var(--ink); font-family: "Manrope", sans
 .network-page { width: 100%; max-width: 1500px; margin: 0 auto; padding: 18px clamp(12px, 2vw, 28px) 24px; }
 .standalone-header { margin-bottom: 18px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
 .eyebrow { margin: 0 0 8px; color: var(--topic-stroke); font-size: .72rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
-.standalone-header h1 { max-width: 880px; margin: 0; font-size: clamp(1.55rem, 3vw, 2.25rem); font-weight: 700; line-height: 1.2; letter-spacing: -.035em; }
+.standalone-header h1 { margin: 0; font-size: clamp(1.55rem, 3vw, 2.25rem); font-weight: 700; line-height: 1.2; letter-spacing: -.035em; }
 .standalone-lede { max-width: 820px; margin: 12px 0 0; color: var(--muted); font-size: .94rem; line-height: 1.55; }
 .header-links { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 14px; font-size: .79rem; }
 .header-links a { color: #514a69; text-decoration: underline; text-underline-offset: 3px; }
 .header-links a:hover { color: #211c32; }
 .header-links a:focus-visible { outline: 2px solid var(--topic-stroke); outline-offset: 3px; }
-.instruction { max-width: 810px; margin: 0 0 18px; color: #55514e; font-size: 0.94rem; line-height: 1.5; }
+.instruction { margin: 0 0 18px; color: #55514e; font-size: 0.94rem; line-height: 1.5; }
 .explorer-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(275px, 335px); gap: 18px; align-items: start; }
 .network-area { min-width: 0; overflow: hidden; border: 1px solid var(--line); background: var(--paper); }
 #topic-network { display: block; width: 100%; font-family: "Manrope", sans-serif; touch-action: pan-y; }
